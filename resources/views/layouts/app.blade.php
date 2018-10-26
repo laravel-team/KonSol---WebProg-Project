@@ -45,10 +45,10 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobirise.com"><img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;"></a>
+                    <a href="{{ route('home') }}"><img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;"></a>
                 </span>
                 <span class="navbar-caption-wrap">
-                    <a class="navbar-caption text-white display-4" href="https://mobirise.com">KonsOL</a>
+                    <a class="navbar-caption text-white display-4" href="{{ route('home') }}">KonsOL</a>
                 </span>
             </div>
         </div>
@@ -70,7 +70,8 @@
             </ul>
             <div class="navbar-buttons mbr-section-btn">
                 <!-- if not login, show register button -->
-                    <a class="btn btn-sm btn-white display-4" href="https://mobirise.com"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Register</a>
+                    <a class="btn btn-sm btn-white display-4" href="/register"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Register</a>
+                    <!-- <a class="btn btn-sm btn-white display-4" href="{{ route('login') }}"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>Login</a> -->
                 <!-- else if logged in, show username -->
             </div>
         </div>
