@@ -21,11 +21,6 @@
 </section>
 
 <section class="features12 cid-r5Nk7mT9c9" id="features12-5">
-
-
-
-
-
     <div class="container">
         <h2 class="mbr-section-title pb-2 mbr-fonts-style display-2">
             Why KonsOL ?</h2>
@@ -118,11 +113,6 @@
 </section>
 
 <section class="testimonials2 cid-r5NFZrMDz9" id="testimonials2-h">
-
-
-
-
-
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-figure pr-lg-5" style="width: 130%;">
@@ -144,11 +134,6 @@
 </section>
 
 <section class="testimonials3 cid-r5NG02P1kz" id="testimonials3-i">
-
-
-
-
-
     <div class="container">
         <div class="media-container-row">
             <div class="media-content px-3 align-self-center mbr-white py-2">
@@ -171,10 +156,6 @@
 </section>
 
 <section class="testimonials1 cid-r5NkSrsriV" id="testimonials1-9">
-
-
-
-
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 align-center">
@@ -249,12 +230,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
         </div>
     </div>
 </section>
