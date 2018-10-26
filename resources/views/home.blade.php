@@ -2,16 +2,11 @@
 
 @section('content')
 <section class="engine"><a href="https://mobirise.me/r">free bootstrap templates</a></section><section class="cid-r5NgUy0haP mbr-fullscreen mbr-parallax-background" id="header2-2">
-
-    
-
-    
-
     <div class="container align-center">
         <div class="row justify-content-md-center">
             <div class="mbr-white col-md-10">
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1"></h1>
-                
+
                 <p class="mbr-text pb-3 mbr-fonts-style display-5"><br><br><br><br><br><br><br><br></p>
                 <div class="mbr-section-btn"><a class="btn btn-md btn-primary-outline display-4" href="https://mobirise.com">Start KonText</a>
                     <a class="btn btn-md btn-primary-outline display-4" href="https://mobirise.com">Start KonFace</a></div>
@@ -26,10 +21,10 @@
 </section>
 
 <section class="features12 cid-r5Nk7mT9c9" id="features12-5">
-    
-    
 
-    
+
+
+
 
     <div class="container">
         <h2 class="mbr-section-title pb-2 mbr-fonts-style display-2">
@@ -45,10 +40,10 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Host Anywhere                     
+                                Host Anywhere
                             </h4>
                         </div>
-                    </div>                
+                    </div>
 
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
@@ -91,7 +86,7 @@
                                 Over 400 Amazing Blocks
                             </h4>
                         </div>
-                    </div>                
+                    </div>
 
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
@@ -124,9 +119,9 @@
 
 <section class="testimonials2 cid-r5NFZrMDz9" id="testimonials2-h">
 
-    
 
-    
+
+
 
     <div class="container">
         <div class="media-container-row">
@@ -150,9 +145,9 @@
 
 <section class="testimonials3 cid-r5NG02P1kz" id="testimonials3-i">
 
-    
 
-    
+
+
 
     <div class="container">
         <div class="media-container-row">
@@ -177,9 +172,9 @@
 
 <section class="testimonials1 cid-r5NkSrsriV" id="testimonials1-9">
 
-    
 
-    
+
+
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 align-center">
@@ -255,12 +250,12 @@
                 </div>
             </div>
 
-            
 
-            
 
-            
+
+
+
         </div>
-    </div>   
+    </div>
 </section>
 @endsection
