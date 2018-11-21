@@ -8,8 +8,8 @@
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1"></h1>
 
                 <p class="mbr-text pb-3 mbr-fonts-style display-5"><br><br><br><br><br><br><br><br></p>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-primary-outline display-4" href="https://mobirise.com">Start KonText</a>
-                    <a class="btn btn-md btn-primary-outline display-4" href="https://mobirise.com">Start KonFace</a></div>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-primary-outline display-4" href="{{ route('kontext') }}">Start KonText</a>
+                    <a class="btn btn-md btn-primary-outline display-4" href="{{ route('konface') }}">Start KonFace</a></div>
             </div>
         </div>
     </div>

@@ -17,6 +17,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
     <script src="assets/parallax/jarallax.min.js"></script>
+    <script src="assets/mbr-tabs/mbr-tabs.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/dropdown/js/script.min.js"></script>
     <script src="assets/theme/js/script.js"></script>
@@ -65,7 +66,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://mobirise.com"><span class="mbrib-user mbr-iconfont mbr-iconfont-btn"></span>About Us&nbsp;</a>
+                    <a class="nav-link link text-white display-4" href="{{ route('aboutus') }}"><span class="mbrib-user mbr-iconfont mbr-iconfont-btn"></span>About Us&nbsp;</a>
                 </li>
             </ul>
             <div class="navbar-buttons mbr-section-btn">

@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/login', 'LoginController@index')->name('login');
 Route::resource('register', 'RegisterController');
+Route::get('/kontext', 'HomeController@indexKontext')->name('kontext');
+Route::get('/konface', 'HomeController@indexKonface')->name('konface');
+Route::get('/aboutus', 'HomeController@indexAboutUs')->name('aboutus');

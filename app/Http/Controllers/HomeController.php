@@ -15,4 +15,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function indexKontext(){
+    	return view('kontext');
+    }
+
+    public function indexKonface(){
+    	return view('konface');
+    }
+
+    public function indexAboutUs(){
+    	return view('aboutus');
+    }
 }
