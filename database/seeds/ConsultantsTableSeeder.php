@@ -21,10 +21,10 @@ class ConsultantsTableSeeder extends Seeder
                 'email' => $faker->unique()->email,
                 'password' => $faker->password,
                 'gender' => $faker->randomElement(['Male', 'Female']),
-                'date-of-birth' => $faker->date($format = 'Y-m-d', $max = 'now'),
-                'address' => $faker->address,
+                'dob' => $faker->date($format = 'Y-m-d', $max = 'now'),
+                'address' => $faker->streetAddress,
                 'corporate' => $faker->company,
-                'contactNumber' => $faker->phoneNumber,
+                'contactNumber' => $faker->e164PhoneNumber,
                 'profilePicture' => $faker->imageUrl(640, 480, 'cats')
             ]);
         }

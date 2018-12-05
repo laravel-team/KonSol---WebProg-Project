@@ -21,9 +21,9 @@ class MembersTableSeeder extends Seeder
                 'email' => $faker->unique()->email,
                 'password' => $faker->password,
                 'gender' => $faker->randomElement(['Male', 'female']),
-                'date-of-birth' => $faker->date($format = 'Y-m-d', $max = 'now'),
-                'address' => $faker->address,
-                'contactNumber' => $faker->phoneNumber,
+                'dob' => $faker->date($format = 'Y-m-d', $max = 'now'),
+                'address' => $faker->streetAddress,
+                'contactNumber' => $faker->e164PhoneNumber,
                 'profilePicture' => $faker->imageUrl(640, 480, 'cats')
             ]);
         }
