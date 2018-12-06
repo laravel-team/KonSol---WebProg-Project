@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ asset('assets/dropdown/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/theme/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+   
 </head>
 
 <body>
@@ -69,6 +70,7 @@
 
 
 <!-- footer -->
+
 <section once="" class="cid-r7yJjKYGHW" id="footer7-r">
     <div class="container">
         <div class="media-container-row align-center mbr-white">
