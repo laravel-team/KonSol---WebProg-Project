@@ -43,6 +43,7 @@ input{
 	font-size: 20px;
 	cursor: pointer;
 	border: none;
+	transition-duration: .4s;
 }
 
 #button-login:hover{
