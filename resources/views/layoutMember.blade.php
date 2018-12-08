@@ -40,11 +40,13 @@
                          <img src="assets/images/Logo.png" alt="KonsOl" style="height: 3.8rem;">
                     </a>
                 </span>
-                <!-- <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="{{ url('home') }}">Wise Choice For Life</a></span> -->
+<!--                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="{{ url('home') }}">KonsOL</a></span> -->
             </div>
         </div>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown open">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                <li class="nav-item dropdown open">
                     <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
                         Categories</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">Education</a><a class="text-white dropdown-item display-4" href="#">Financial</a><a class="text-white dropdown-item display-4" href="#">Healthcare</a></div>
                 </li>
@@ -53,11 +55,12 @@
                         <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         About Us
                     </a>
+                </li>
+
+                <li class="nav-item dropdown open">
+                    <a class="nav-link link text-white dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
+                        {{$name}}</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4">Change Profile</a><a class="text-white dropdown-item display-4" href="#">Log Out</a></div>
                 </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white display-4" href="{{ url('register') }}"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
-                    Register</a></div>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white display-4" href="{{ url('login') }}"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
-                    Login</a></div>
         </div>
     </nav>
 </section>

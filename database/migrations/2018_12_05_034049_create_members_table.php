@@ -19,10 +19,10 @@ class CreateMembersTable extends Migration
             $table->string('email');
             $table->string('password');
             $table->string('gender');
-            $table->date('dob');
-            $table->string('address');
-            $table->string('contactNumber');
-            $table->string('profilePicture');
+            $table->date('dob')->nullable();
+            $table->string('address')->nullable();
+            $table->string('contactNumber')->nullable();
+            $table->string('profilePicture')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

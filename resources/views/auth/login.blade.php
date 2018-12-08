@@ -1,11 +1,11 @@
 @extends('layout')
 
-@section('login', 'Login')
+@section('title', 'Login')
 
 @section('content')
 <link rel="stylesheet" type="text/css" href="css/page2.css">
     <section once="" class="cid-ra90iOq3RC" id="footer7-1d">
-    <form id="form-regis" class="mbr-form" action="{{ url('login') }}" method="post" data-form-title="Mobirise Form">
+    <form style="margin-right: auto; margin-left: auto; display: block;" id="form-regis" class="mbr-form" action="{{ url('login') }}" method="post" data-form-title="Mobirise Form">
     @csrf
         <div class="wrapper">
             <div class="container-box">

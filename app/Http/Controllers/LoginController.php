@@ -21,8 +21,10 @@ class LoginController extends Controller
     	
     	if($member != null)
     	{
+            $name = Member::find($memberID)->name;      
     		session(['login'=>$member->name, 'id'=>$member->memberID, 'photo'=>$member->profilePicture, 'success'=>'login']);
-           	return redirect('/home');
+
+            return view('dashboard', compact('name'));
         }
 		else
 		{

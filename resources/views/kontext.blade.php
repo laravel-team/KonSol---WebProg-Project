@@ -36,8 +36,8 @@
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <ol>
-                    <li><strong>KonFace Konsultasi Online FREE&nbsp;</strong>- no special actions required, all sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site, it will adapt automagically. <a href="https://mobirise.com/">Try it now!</a></li>
-                    <li><strong>KonFace Konsultasi Online PREMIUM&nbsp;</strong>- cut down the development time with drag-and-drop website builder. Drop the blocks into the page, edit content inline and publish - no technical skills required. <a href="https://mobirise.com/">Try it now!</a></li>
+                    <li><strong>KonFace Konsultasi Online FREE&nbsp;</strong> : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"<a href="#">Try it now!</a></li>
+                    <li><strong>KonFace Konsultasi Online PREMIUM&nbsp;</strong> : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!" <a href="#">Try it now!</a></li>
                 </ol>
             </div>
         </div>
@@ -73,7 +73,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible. You can combine blocks in different ways on your pages.
+                                    Text
                                 </p>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
+                                    Text
                                 </p>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Publish your website to a local drive, FTP or host on Amazon S3, Google Cloud, Github Pages. Don't be a hostage to just one platform or service provider.
+                                    Text
                                 </p>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Just drop the blocks into the page, edit content inline and publish - no technical skills required.
+                                    Text
                                 </p>
                             </div>
                         </div>

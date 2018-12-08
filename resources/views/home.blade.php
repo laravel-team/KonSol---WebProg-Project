@@ -46,7 +46,7 @@
 
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Publish your website to a local drive, FTP or host on Amazon S3, Google Cloud, Github Pages. Don't be a hostage to just one platform or service provider.
+                            Text
                         </p>
                     </div>
                 </div>
@@ -58,13 +58,13 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Easy and Simple to Use
+                                Text
                             </h4>
                         </div>
                     </div>
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Just drop the blocks into the page, edit content inline and publish - no technical skills required.
+                            Text
                         </p>
                     </div>
                 </div>
@@ -82,14 +82,14 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Over 400 Amazing Blocks
+                                Text
                             </h4>
                         </div>
                     </div>                
 
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Mobirise offers several themes that include sliders, galleries, article blocks, counters, accordions, video and many more.
+                            Text
                         </p>
                     </div>
                 </div>
@@ -101,13 +101,13 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Unlimited Sites
+                                Text
                             </h4>
                         </div>
                     </div>
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
+                            Text
                         </p>
                     </div>
                 </div>
@@ -129,13 +129,13 @@
             </div>
             <div class="media-content px-3 align-self-center mbr-white py-2">
                     <p class="mbr-text testimonial-text mbr-fonts-style display-7">
-                       Loving the additions to the new version of Mobirise web dev app. It's a great, cleanly designed, user-friendly, not-bloated design program. So easy and a pleasure to use
+                       Text
                     </p>
                     <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">
-                       David F.
+                       Name.
                     </p>
                     <p class="mbr-author-desc mbr-fonts-style display-7">
-                       DEVELOPER
+                       Role
                     </p>
             </div>
         </div>
@@ -152,13 +152,13 @@
         <div class="media-container-row">
             <div class="media-content px-3 align-self-center mbr-white py-2">
                 <p class="mbr-text testimonial-text mbr-fonts-style display-7">
-                   It's really very amazing app that makes me finish html page in 3 minutes that's usually takes more than 1 hours at least from me if i did it from scratch
+                   Text
                 </p>
                 <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">
-                   Julie C.
+                   Name.
                 </p>
                 <p class="mbr-author-desc mbr-fonts-style display-7">
-                   INTERFACE DESIGNER
+                   Role
                 </p>
             </div>
 
