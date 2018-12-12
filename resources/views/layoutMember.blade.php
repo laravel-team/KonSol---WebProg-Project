@@ -36,7 +36,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="{{ url('home') }}">
+                    <a href="{{ url('dashboard') }}">
                          <img src="assets/images/Logo.png" alt="KonsOl" style="height: 3.8rem;">
                     </a>
                 </span>
@@ -58,8 +58,15 @@
                 </li>
 
                 <li class="nav-item dropdown open">
-                    <a class="nav-link link text-white dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
-                        {{$name}}</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4">Change Profile</a><a class="text-white dropdown-item display-4" href="#">Log Out</a></div>
+                    <a class="nav-link link text-white dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="true">
+                        <span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
+                        {{Session::get('login')}}
+                    </a>
+
+                        <div class="dropdown-menu">
+                            <a class="text-white dropdown-item display-4" href="#">Change Profile</a>
+                            <a class="text-white dropdown-item display-4" href="/logout">Log Out</a>
+                        </div>
                 </li></ul>
         </div>
     </nav>

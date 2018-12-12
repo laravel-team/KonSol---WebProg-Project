@@ -23,6 +23,6 @@ Route::get('/kontext', 'HomeController@indexKontext')->name('kontext');
 Route::get('/konface', 'HomeController@indexKonface')->name('konface');
 Route::get('/aboutus', 'HomeController@indexAboutUs')->name('aboutus');
 
-// Route::get('/dashboard', function(){
-// 	return view('dashboard');
-// });
+Route::get('/dashboard', 'LoginController@showDashboard')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+
+Route::get('/logout', 'LoginController@logOut');

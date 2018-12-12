@@ -2,8 +2,8 @@
 
 @section('title', 'Dashboard')
 @section('content')
-<section class="counters2 counters cid-rbr8NdxSJ4" id="counters2-2">
 <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<section class="counters2 counters cid-rbr8NdxSJ4" id="counters2-2">
     <div class="container pt-4 mt-2">
         <div class="media-container-row">
             <div class="media-block" style="width: 38%;">
@@ -13,7 +13,7 @@
                 </div>
 
                 <h2 style="border-top: 3px solid black; margin-top: 2%" class="mbr-section-title pb-3 align-left mbr-fonts-style display-2">
-                    {{$name}}</h2>
+                    {{Session::get('login')}}</h2>
             </div>
             <div style="margin-left: 5%" class="cards-block">
                 <div class="cards-container">
@@ -54,8 +54,8 @@
                         </div>
                     </div>
                     
-                    <button id="button-login" class="mr-auto col-md-5"><a href="#" style="co">KonText</a></button>
-                    <button id="button-login" class="mr-auto col-md-5"><a href="#">KonFace</a></button>
+                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('kontext') }}" style="co">KonText</a></button>
+                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konface') }}">KonFace</a></button>
 
                 </div>
             </div>
@@ -67,7 +67,7 @@
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
+  <!-- <script src="assets/dropdown/js/script.min.js"></script> -->
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>

@@ -18,17 +18,26 @@ class LoginController extends Controller
 
     	$memberID = DB::table('members')->where('email','=',$email)->where('password','=',$password)->value('memberID');
     	$member = Member::find($memberID);
-    	
+    	// Session::put('isLogin', FALSE);
+
     	if($member != null)
     	{
-            $name = Member::find($memberID)->name;      
-    		session(['login'=>$member->name, 'id'=>$member->memberID, 'photo'=>$member->profilePicture, 'success'=>'login']);
+            session(['login'=>$member->name, 'id'=>$member->memberID, 'photo'=>$member->profilePicture, 'success'=>'login', 'isLogin' => TRUE]);
 
-            return view('dashboard', compact('name'));
+            return redirect('dashboard');
         }
 		else
 		{
 			return redirect()->back();
 		}
+    }
+
+    public function showDashboard(){
+	    return view('dashboard');
+	}
+
+	public function logOut(){
+	    \Session::flush();
+	    return redirect('login')->with('alert', 'Logout Success');
     }
 }
