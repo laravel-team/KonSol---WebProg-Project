@@ -27,8 +27,9 @@
 <section class="features12 cid-r7yFqcZCSn" id="features12-l">
     <div class="container">
         <h2 class="mbr-section-title pb-2 mbr-fonts-style display-2">
-            What is KonsOL</h2>
-        <h3 class="mbr-section-subtitle pb-3 mbr-fonts-style display-5">KonsOL ...</h3>
+            What is KonsOL ?</h2>
+        <h3 class="mbr-section-subtitle pb-3 mbr-fonts-style display-5">KonsOL is a web consulting application that provides online consultation on </h3>
+        <h3 class="mbr-section-subtitle pb-3 mbr-fonts-style display-5">education, finance, and health</h3>
 
         <div class="media-container-row pt-5">
             <div class="block-content align-right">
@@ -39,14 +40,14 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Host Anywhere                     
+                                Accessibility                     
                             </h4>
                         </div>
                     </div>                
 
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Text
+                            Access application whenever and wherever you are, making it easy to do the consultation.
                         </p>
                     </div>
                 </div>
@@ -58,13 +59,13 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Text
+                                Flexibility
                             </h4>
                         </div>
                     </div>
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Text
+                            Comfortable while using application and managing consultation schedule
                         </p>
                     </div>
                 </div>
@@ -82,14 +83,14 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Text
+                                Quality
                             </h4>
                         </div>
                     </div>                
 
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Text
+                            We give the best consultant resource which expert in each consulting category
                         </p>
                     </div>
                 </div>
@@ -101,13 +102,13 @@
                         </div>
                         <div class="mbr-crt-title">
                             <h4 class="card-title py-2 mbr-crt-title mbr-fonts-style display-7">
-                                Text
+                                Stability
                             </h4>
                         </div>
                     </div>
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Text
+                            Well-maintained application and excellent performance making it more easy to consult  
                         </p>
                     </div>
                 </div>
@@ -129,13 +130,14 @@
             </div>
             <div class="media-content px-3 align-self-center mbr-white py-2">
                     <p class="mbr-text testimonial-text mbr-fonts-style display-7">
-                       Text
+                       "Using KonsOL makes me easy to learn new things and catching up other developed technology.
+                       You can ask every questions or problems you have in KonsOL, it gives me more knowledge to grow."
                     </p>
                     <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">
-                       Name.
+                       Peter McMahon.
                     </p>
                     <p class="mbr-author-desc mbr-fonts-style display-7">
-                       Role
+                       Programmer
                     </p>
             </div>
         </div>
@@ -152,13 +154,13 @@
         <div class="media-container-row">
             <div class="media-content px-3 align-self-center mbr-white py-2">
                 <p class="mbr-text testimonial-text mbr-fonts-style display-7">
-                   Text
+                   "These days many fake news about health that makes me worry. But since I've used KonsOL, I am not worry anymore because I get a lot of accurate tips, helps, and suggestions for my healthcare. KonsOL is a good and perfect app for consulting, and I got my healthiness improved."
                 </p>
                 <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">
-                   Name.
+                   Jessica Amber.
                 </p>
                 <p class="mbr-author-desc mbr-fonts-style display-7">
-                   Role
+                   Student
                 </p>
             </div>
 
@@ -191,12 +193,13 @@
           <div class="testimonials-caption col-lg-9 col-md-8">
             <div class="user_text ">
               <p class="mbr-fonts-style  display-7">
-                 <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"</em>
+                 <em>"KonsOL helps user to know and informed about everything related to the chosen field. 
+                 It's a nice app and easy to use."</em>
               </p>
             </div>
-            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">Cons1</div>
+            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">Heather May</div>
             <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
-                 ....</div>
+                 CTO of Pash.com</div>
           </div>
         </div>
       </div><div class="testimonials-item">
@@ -209,70 +212,33 @@
           <div class="testimonials-caption col-lg-9 col-md-8">
             <div class="user_text">
               <p class="mbr-fonts-style  display-7">
-                 <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"</em>
+                 <em>"Health is a serious issues and it should get the best and accurate information. Patients now can use KonsOL
+                 to consult with the doctor and get the right information about it. They can easily communicate each other by remote"</em>
               </p>
             </div>
             <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Cons2</div>
+                 Marissa Gunther</div>
             <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
-                 ....</div>
+                 Medical Nerve Specialist</div>
           </div>
         </div>
       </div><div class="testimonials-item">
         <div class="user row">
           <div class="col-lg-3 col-md-4">
             <div class="user_image">
-              <img src="assets/images/face1.jpg">
+              <img src="assets/images/face2.jpg">
             </div>
           </div>
           <div class="testimonials-caption col-lg-9 col-md-8">
             <div class="user_text">
               <p class="mbr-fonts-style  display-7">
-                 <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"</em>
+                 <em>"Many people stil don't know how to manage their finance. Lack of management skill can cause a lot of loss and it is a serious problem. You can ask all about finance, management, and investment problems in KonsOL. It is important to know about financial issues so that you can manage your finance better"</em>
               </p>
             </div>
             <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Cons3</div>
+                 Leandra Olivia</div>
             <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
-                 ....</div>
-          </div>
-        </div>
-      </div><div class="testimonials-item">
-        <div class="user row">
-          <div class="col-lg-3 col-md-4">
-            <div class="user_image">
-              <img src="assets/images/face1.jpg">
-            </div>
-          </div>
-          <div class="testimonials-caption col-lg-9 col-md-8">
-            <div class="user_text">
-              <p class="mbr-fonts-style  display-7">
-                 <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"</em>
-              </p>
-            </div>
-            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Cons4</div>
-            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
-                 ....</div>
-          </div>
-        </div>
-      </div><div class="testimonials-item">
-        <div class="user row">
-          <div class="col-lg-3 col-md-4">
-            <div class="user_image">
-              <img src="assets/images/face1.jpg">
-            </div>
-          </div>
-          <div class="testimonials-caption col-lg-9 col-md-8">
-            <div class="user_text">
-              <p class="mbr-fonts-style  display-7">
-                 <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"</em>
-              </p>
-            </div>
-            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Cons5</div>
-            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
-                 ....</div>
+                 International Finance Banker</div>
           </div>
         </div>
       </div></div>

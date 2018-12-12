@@ -15,7 +15,7 @@
               <input type="Password" name="password" >
               <button id="button-login" type="submit">Login</button>
               <p style="padding-left: 17%;padding-top: 5%">
-                <a href="{{ url('register')}}" style="color: black;"><u>
+                <a href="{{ url('register')}}" style="color: white;"><u>
                   don't have account?</a>
                 </u>
               </p>
