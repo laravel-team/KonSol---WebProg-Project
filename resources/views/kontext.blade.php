@@ -23,7 +23,10 @@
                     </div>
                     <div class="media-content">
                         <div class="mbr-section-text">
-                            <p class="mbr-text mb-0 mbr-fonts-style display-7"><strong>What is KonText ?&nbsp;</strong> <br>Bla Bla Bla .....</p>
+                            <p class="mbr-text mb-0 mbr-fonts-style display-7" align="justify"><strong>What is KonText ?&nbsp;</strong> <br>
+                            KonText is KonsOL chatting feature for communication purpose between client and consultant. 
+                            This texting feature allows client and consultant to schedule appointment and discuss about 
+                            topic's issues and questions related.</p>
                         </div>
                     </div>
                 </div>
@@ -36,8 +39,8 @@
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <ol>
-                    <li><strong>KonText Konsultasi Online FREE&nbsp;</strong> : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"<a href="#">Try it now!</a></li>
-                    <li><strong>KonText Konsultasi Online PREMIUM&nbsp;</strong> : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!" <a href="#">Try it now!</a></li>
+                    <li><strong>KonText Online Consultation FREE&nbsp;</strong> : Chatting interface for client and consultant + Support general document file from both user.</li>
+                    <li><strong>KonText Online Consultation PREMIUM&nbsp;</strong> : All free KonText feature + Autoconnect appointment to calendar + Support all specific file type + Unlimited text length.</li>
                 </ol>
             </div>
         </div>

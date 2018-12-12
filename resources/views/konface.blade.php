@@ -23,7 +23,9 @@
                     </div>
                     <div class="media-content">
                         <div class="mbr-section-text">
-                            <p class="mbr-text mb-0 mbr-fonts-style display-7"><strong>What is KonFace ?&nbsp;</strong> <br>Bla Bla Bla .....</p>
+                            <p class="mbr-text mb-0 mbr-fonts-style display-7" align="justify"><strong>What is KonFace ?&nbsp;</strong>
+                            <br>
+                            KonFace is a facecam feature between clients and consultants. With facecam you can give and get visualization of content that clients or consultants want to show. You can demonstrate and give example of current result with KonFace. Communication and progress are become easier with KonFace.</p>
                         </div>
                     </div>
                 </div>
@@ -34,10 +36,10 @@
  <section class="mbr-section article content11 cid-ra0IYavF5p" id="content11-z">
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7" align="justify">
                 <ol>
-                    <li><strong>KonFace Konsultasi Online FREE&nbsp;</strong> : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"<a href="https://mobirise.com/">Try it now!</a></li>
-                    <li><strong>KonFace Konsultasi Online PREMIUM&nbsp;</strong> : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!" <a href="https://mobirise.com/">Try it now!</a></li>
+                    <li><strong>KonFace Online Consultation FREE&nbsp;</strong> : Facecam 2 direction between client and consultant + Communicating using microphone and camera + Accessible both headphone and speaker.</li>
+                    <li><strong>KonFace Online Consultation PREMIUM&nbsp;</strong> : All free KonFace feature + Full wided visual facecam + Featuring text, icon, and autodemos + Available multi-person camera option + Complete access for all device.</li>
                 </ol>
             </div>
         </div>
