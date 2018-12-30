@@ -29,4 +29,7 @@ Route::get('/aboutus', 'HomeController@indexAboutUs')->name('aboutus');
 
 Route::get('/dashboard', 'LoginController@showDashboard')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
+Route::get('/change-profile', 'LoginController@changeProfile')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::patch('/update-profile/{id}', 'LoginController@updateProfile');
+
 Route::get('/logout', 'LoginController@logOut');

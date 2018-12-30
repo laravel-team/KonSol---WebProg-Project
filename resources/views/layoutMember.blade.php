@@ -64,7 +64,7 @@
                     </a>
 
                         <div class="dropdown-menu">
-                            <a class="text-white dropdown-item display-4" href="#">Change Profile</a>
+                            <a class="text-white dropdown-item display-4" href="{{ url('change-profile') }}">Change Profile</a>
                             <a class="text-white dropdown-item display-4" href="/logout">Log Out</a>
                         </div>
                 </li></ul>
