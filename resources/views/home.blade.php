@@ -71,8 +71,8 @@
                 </div>
             </div>
 
-            <div class="mbr-figure" style="width: 50%;">
-                <img src="assets/images/06.jpg" alt="Mobirise">
+            <div class="mbr-figure" style="width: 45%; margin-top: 7%">
+                <img src="assets/images/Logo.png" alt="KonsOL">
             </div>
 
             <div class="block-content align-left  ">
@@ -125,8 +125,8 @@
 
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-figure pr-lg-5" style="width: 130%;">
-              <img src="assets/images/face4.jpg">
+            <div class="mbr-figure pr-lg-5" style="width: 100%;">
+              <img src="assets/images/default-pp.jpg">
             </div>
             <div class="media-content px-3 align-self-center mbr-white py-2">
                     <p class="mbr-text testimonial-text mbr-fonts-style display-7">
@@ -134,7 +134,7 @@
                        You can ask every questions or problems you have in KonsOL, it gives me more knowledge to grow."
                     </p>
                     <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">
-                       Peter McMahon.
+                       Users.
                     </p>
                     <p class="mbr-author-desc mbr-fonts-style display-7">
                        Programmer
@@ -157,15 +157,15 @@
                    "These days many fake news about health that makes me worry. But since I've used KonsOL, I am not worry anymore because I get a lot of accurate tips, helps, and suggestions for my healthcare. KonsOL is a good and perfect app for consulting, and I got my healthiness improved."
                 </p>
                 <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">
-                   Jessica Amber.
+                   Users.
                 </p>
                 <p class="mbr-author-desc mbr-fonts-style display-7">
                    Student
                 </p>
             </div>
 
-            <div class="mbr-figure pl-lg-5" style="width: 130%;">
-              <img src="assets/images/face5.jpg">
+            <div class="mbr-figure pl-lg-5" style="width: 100%;">
+              <img src="assets/images/default-pp.jpg">
             </div>
         </div>
     </div>
@@ -187,7 +187,7 @@
         <div class="user row">
           <div class="col-lg-3 col-md-4">
             <div class="user_image">
-              <img src="assets/images/face3.jpg">
+              <img src="assets/images/default-pp.jpg">
             </div>
           </div>
           <div class="testimonials-caption col-lg-9 col-md-8">
@@ -197,7 +197,7 @@
                  It's a nice app and easy to use."</em>
               </p>
             </div>
-            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">Heather May</div>
+            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">Users</div>
             <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
                  CTO of Pash.com</div>
           </div>
@@ -206,7 +206,7 @@
         <div class="user row">
           <div class="col-lg-3 col-md-4">
             <div class="user_image">
-              <img src="assets/images/face1.jpg">
+              <img src="assets/images/default-pp.jpg">
             </div>
           </div>
           <div class="testimonials-caption col-lg-9 col-md-8">
@@ -217,7 +217,7 @@
               </p>
             </div>
             <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Marissa Gunther</div>
+                 Users</div>
             <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
                  Medical Nerve Specialist</div>
           </div>
@@ -226,7 +226,7 @@
         <div class="user row">
           <div class="col-lg-3 col-md-4">
             <div class="user_image">
-              <img src="assets/images/face2.jpg">
+              <img src="assets/images/default-pp.jpg">
             </div>
           </div>
           <div class="testimonials-caption col-lg-9 col-md-8">
@@ -236,7 +236,7 @@
               </p>
             </div>
             <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Leandra Olivia</div>
+                 Users</div>
             <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
                  International Finance Banker</div>
           </div>

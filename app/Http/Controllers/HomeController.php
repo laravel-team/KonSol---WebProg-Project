@@ -27,4 +27,12 @@ class HomeController extends Controller
     public function indexAboutUs(){
     	return view('aboutus');
     }
+
+    public function indexKontextLogin(){
+        return view('kontextLogin');
+    }
+
+    public function indexKonfaceLogin(){
+        return view('konfaceLogin');
+    }
 }

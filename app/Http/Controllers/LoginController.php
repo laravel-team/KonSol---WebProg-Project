@@ -36,6 +36,14 @@ class LoginController extends Controller
 	    return view('dashboard');
 	}
 
+    public function showKontext(){
+        return view('kontextLogin');
+    }
+
+    public function showKonface(){
+        return view('konfaceLogin');
+    }
+
 	public function logOut(){
 	    \Session::flush();
 	    return redirect('login')->with('alert', 'Logout Success');

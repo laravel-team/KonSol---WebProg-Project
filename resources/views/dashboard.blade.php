@@ -9,7 +9,11 @@
             <div class="media-block" style="width: 38%;">
                 
                 <div class="mbr-figure">
-                    <img src="assets/images/jumbotron.jpg">
+                    @if(session()->has('photo'))
+                        <img src="assets/images/{{Session::get('photo')}}">
+                    @else
+                        <img src="assets/images/default-pp.jpg">
+                    @endif
                 </div>
 
                 <h2 style="border-top: 3px solid black; margin-top: 2%" class="mbr-section-title pb-3 align-left mbr-fonts-style display-2">
@@ -54,8 +58,8 @@
                         </div>
                     </div>
                     
-                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('kontext') }}" style="co">KonText</a></button>
-                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konface') }}">KonFace</a></button>
+                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('kontextLogin') }}" style="co">KonText</a></button>
+                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konfaceLogin') }}">KonFace</a></button>
 
                 </div>
             </div>

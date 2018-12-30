@@ -10,9 +10,9 @@
         <div class="wrapper">
             <div class="container-box">
               <label>Email</label>
-              <input type="text" name="email" >
+              <input type="text" name="email" placeholder="Email">
               <label>Password</label>
-              <input type="Password" name="password" >
+              <input type="Password" name="password" placeholder="Password">
               <button id="button-login" type="submit">Login</button>
               <p style="padding-left: 17%;padding-top: 5%">
                 <a href="{{ url('register')}}" style="color: white;"><u>
