@@ -26,7 +26,6 @@ class RegisterController extends Controller
         if($validasi -> fails()){
             return redirect()->back()->withErrors($validasi)->withInput($request->all());
         }
-
 		
 		$member = new Member(Input::all());
 
@@ -40,7 +39,9 @@ class RegisterController extends Controller
         	$dest = 'assets/images/';
         	$image->move($dest, $imageName);
         	$member->profilePicture = $imageName;
-		}
+		}else{
+            $member->profilePicture = "";
+        }
 
 		$member->email = $request->email;
         $member->name = $request->name;

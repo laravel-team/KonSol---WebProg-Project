@@ -12,10 +12,10 @@
         <div class="wrapper" style="height: 130vh !important">
             <div class="container-box">
               <label>Name</label>
-              <input type="text" name="name" placeholder="Name">
+              <input type="text" name="name" placeholder="Name" value="{{ old('name') }}">
 
               <label>Email</label>
-              <input type="Email" name="email" placeholder="Email">
+              <input type="Email" name="email" placeholder="Email" value="{{ old('email') }}">
 
               <label>Password</label>
               <input type="Password" name="password" placeholder="Password">
@@ -36,10 +36,10 @@
               </div>
               
               <label>Address</label>
-              <input type="text" name="address" placeholder="Address">
+              <input type="text" name="address" placeholder="Address" value="{{ old('address') }}">
 
               <label>Phone Number</label>
-              <input type="text" name="contactNumber" placeholder="Phone Number">
+              <input type="text" name="contactNumber" placeholder="Phone Number" value="{{ old('contactNumber') }}">
 
               <!-- <br> -->
               <label>Profile Picture</label>
@@ -48,10 +48,10 @@
               </label>
               <input id="file-upload" type="file" name="image" />
               
-              <button href="" type="submit" id="button-login" style="margin-top: 8%;">Send Form</button>
-              
+              <button href="" type="submit" id="button-login" style="margin-top: 8%;">Register</button>
+              <br>
               @if(isset($errors))
-                {{$errors->first()}}
+                <p style="font-weight: bold; color: red;">{{$errors->first()}}</p>
               @endif
             </div>
            
