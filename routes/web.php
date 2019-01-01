@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/login', 'LoginController@index')->name('indexlogin');
 Route::post('/login', 'LoginController@login');
+Route::get('/consultant-login', 'LoginController@consultantindex');
+Route::post('/consultant-login', 'LoginController@consultantLogin');
+
 Route::resource('register', 'RegisterController');
 Route::get('/kontext', 'HomeController@indexKontext')->name('kontext');
 Route::get('/konface', 'HomeController@indexKonface')->name('konface');
@@ -34,3 +37,5 @@ Route::patch('/update-profile/{id}', 'LoginController@updateProfile');
 Route::get('/about-us-login', 'LoginController@showAboutUs')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 Route::get('/logout', 'LoginController@logOut');
+
+//chat

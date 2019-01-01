@@ -6,12 +6,17 @@ use Illuminate\Http\Request;
 use DB;
 use session;
 use App\Member;
+use App\Consultant;
 use Illuminate\Support\Facades\Input;
 
 class LoginController extends Controller
 {
     public function index(){
     	return view('auth.login');
+    }
+
+    public function consultantIndex(){
+        return view('auth.consultantLogin');
     }
 
     public function login(Request $request){
@@ -32,6 +37,25 @@ class LoginController extends Controller
 		{
 			return redirect()->back();
 		}
+    }
+
+    public function consultantLogin(Request $request){
+        $email = $request->email;
+        $password = $request->password;
+
+        $consultantID = DB::table('consultants')->where('email','=',$email)->where('password','=',$password)->value('consultantID');
+        $consultant = Consultant::finD($consultantID);
+
+        if($consultant != null)
+        {
+            session(['email'=>$consultant->email, 'password'=>$consultant->password, 'login'=>$consultant->name, 'id'=>$consultant->consultantID, 'gender'=>$consultant->gender, 'address'=>$consultant->address, 'phone'=>$consultant->contactNumber, 'corporate'=>$consultant->corporate, 'photo'=>$consultant->profilePicture, 'success'=>'login', 'isLogin' => TRUE]);
+
+            return redirect('dashboard');
+        }
+        else
+        {
+            return redirect()->back();
+        }
     }
 
     public function showDashboard(){
