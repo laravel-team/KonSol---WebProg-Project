@@ -13,7 +13,7 @@ class ConsultantsTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        $limit = 30;
+        $limit = 10;
 
         for ($i = 0; $i < $limit; $i++) {
             DB::table('consultants')->insert([
@@ -26,6 +26,11 @@ class ConsultantsTableSeeder extends Seeder
                 'corporate' => $faker->company,
                 'contactNumber' => $faker->e164PhoneNumber,
                 'profilePicture' => $faker->imageUrl(640, 480, 'cats')
+            ]);
+
+            DB::table('header_categories')->insert([
+                'consultantID' => ($i+1),
+                'categoryID' => rand(1,3)
             ]);
         }
     }

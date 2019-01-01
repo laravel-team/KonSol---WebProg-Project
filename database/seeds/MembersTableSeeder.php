@@ -13,7 +13,7 @@ class MembersTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        $limit = 30;
+        $limit = 10;
 
         for ($i = 0; $i < $limit; $i++) {
             DB::table('members')->insert([
