@@ -49,7 +49,7 @@
                         Categories</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">Education</a><a class="text-white dropdown-item display-4" href="#">Financial</a><a class="text-white dropdown-item display-4" href="#">Healthcare</a></div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="{{ url('aboutus') }}">
+                    <a class="nav-link link text-white display-4" href="{{ url('about-us') }}">
                         <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         About Us
                     </a>

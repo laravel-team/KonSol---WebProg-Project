@@ -22,14 +22,15 @@ Route::resource('register', 'RegisterController');
 Route::get('/kontext', 'HomeController@indexKontext')->name('kontext');
 Route::get('/konface', 'HomeController@indexKonface')->name('konface');
 
-Route::get('/kontextLogin', 'LoginController@showKontext')->middleware(\App\Http\Middleware\LoginMiddleware::class);
-Route::get('/konfaceLogin', 'LoginController@showKonface')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::get('/kontext-login', 'LoginController@showKontext')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::get('/konface-login', 'LoginController@showKonface')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
-Route::get('/aboutus', 'HomeController@indexAboutUs')->name('aboutus');
+Route::get('/about-us', 'HomeController@indexAboutUs')->name('aboutus');
 
 Route::get('/dashboard', 'LoginController@showDashboard')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 Route::get('/change-profile', 'LoginController@changeProfile')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 Route::patch('/update-profile/{id}', 'LoginController@updateProfile');
+Route::get('/about-us-login', 'LoginController@showAboutUs')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 Route::get('/logout', 'LoginController@logOut');

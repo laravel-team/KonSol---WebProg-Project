@@ -95,6 +95,10 @@ class LoginController extends Controller
         return redirect('/login');
     }
 
+    public function showAboutUs(){
+        return view('aboutusLogin');
+    }
+
 	public function logOut(){
 	    \Session::flush();
 	    return redirect('login')->with('alert', 'Logout Success');

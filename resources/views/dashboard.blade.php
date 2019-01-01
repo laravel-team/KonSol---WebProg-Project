@@ -58,8 +58,8 @@
                         </div>
                     </div>
                     
-                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('kontextLogin') }}" style="co">KonText</a></button>
-                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konfaceLogin') }}">KonFace</a></button>
+                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('kontext-login') }}" style="co">KonText</a></button>
+                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konface-login') }}">KonFace</a></button>
 
                 </div>
             </div>
