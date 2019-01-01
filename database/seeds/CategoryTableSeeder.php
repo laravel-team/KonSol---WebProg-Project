@@ -22,5 +22,17 @@ class CategoryTableSeeder extends Seeder
             		'name' => 'Economic'
             	]
             ]);
+
+        DB::table('consultation_methods')->insert([
+                [
+                    'name' => 'KonText'
+                ],
+                [
+                    'name' => 'KonFace'
+                ],
+                [
+                    'name' => 'Meeting'
+                ]
+            ]);
     }
 }

@@ -7,6 +7,7 @@ use DB;
 use session;
 use App\Member;
 use App\Consultant;
+use App\ConsultationBooking;
 use Illuminate\Support\Facades\Input;
 
 class LoginController extends Controller
@@ -29,7 +30,7 @@ class LoginController extends Controller
 
     	if($member != null)
     	{
-            session(['email'=>$member->email, 'password'=>$member->password, 'login'=>$member->name, 'id'=>$member->memberID, 'gender'=>$member->gender, 'address'=>$member->address, 'phone'=>$member->contactNumber,  'photo'=>$member->profilePicture, 'success'=>'login', 'isLogin' => TRUE]);
+            session(['email'=>$member->email, 'password'=>$member->password, 'login'=>$member->name, 'id'=>$member->memberID, 'gender'=>$member->gender, 'address'=>$member->address, 'phone'=>$member->contactNumber,  'photo'=>$member->profilePicture, 'konWallet'=>$member->konWallet, 'success'=>'login', 'isLogin' => TRUE]);
 
             return redirect('dashboard');
         }
@@ -59,7 +60,11 @@ class LoginController extends Controller
     }
 
     public function showDashboard(){
-	    return view('dashboard');
+        $schedules = ConsultationBooking::join('consultants', 'consultants.consultantID', '=', 'consultation_bookings.consultantID')->join('categories', 'categories.categoryID', '=', 'consultation_bookings.categoryID')->join('consultation_methods', 'consultation_methods.consultationMethodID', '=', 'consultation_bookings.consultationMethodID')->where('memberID', '=', Session::get('id'))->select('consultation_bookings.*', 'consultants.name as consultantName', 'categories.name as categoryName', 'consultation_methods.name as consultationMethod')->get();
+        $consultants = Consultant::all();
+        $bookingCount = ConsultationBooking::where('memberID', '=', Session::get('id'))->count();
+        
+	    return view('dashboard', compact('consultants', 'schedules', 'bookingCount'));
 	}
 
     public function showKontext(){
@@ -117,10 +122,6 @@ class LoginController extends Controller
         $member->save();
 
         return redirect('/login');
-    }
-
-    public function showAboutUs(){
-        return view('aboutusLogin');
     }
 
 	public function logOut(){

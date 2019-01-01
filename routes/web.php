@@ -15,6 +15,8 @@ Route::get('/', function () {
     return redirect()->route('home');
 });
 
+
+//mainIndex(no need of middleware)
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/login', 'LoginController@index')->name('indexlogin');
 Route::post('/login', 'LoginController@login');
@@ -24,18 +26,30 @@ Route::post('/consultant-login', 'LoginController@consultantLogin');
 Route::resource('register', 'RegisterController');
 Route::get('/kontext', 'HomeController@indexKontext')->name('kontext');
 Route::get('/konface', 'HomeController@indexKonface')->name('konface');
+Route::get('/about-us', 'HomeController@indexAboutUs')->name('aboutus');
+Route::get('/logout', 'LoginController@logOut');
 
+
+//memberIndex(need middleware)
+//middlewareny nnti di grouping aja
 Route::get('/kontext-login', 'LoginController@showKontext')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 Route::get('/konface-login', 'LoginController@showKonface')->middleware(\App\Http\Middleware\LoginMiddleware::class);
-
-Route::get('/about-us', 'HomeController@indexAboutUs')->name('aboutus');
 
 Route::get('/dashboard', 'LoginController@showDashboard')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 Route::get('/change-profile', 'LoginController@changeProfile')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 Route::patch('/update-profile/{id}', 'LoginController@updateProfile');
-Route::get('/about-us-login', 'LoginController@showAboutUs')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
-Route::get('/logout', 'LoginController@logOut');
+//consultation
+Route::get('/consultation', 'UserController@indexConsultation');
+Route::get('/consultant/sort/{categoryID}', 'UserController@sortConsultant');
 
-//chat
+//consultant profile
+Route::get('/consultant/{consultantID}', 'UserController@indexConsultantProfile');
+
+//top up
+Route::get('/topup', 'UserController@indexTopup');
+Route::post('/topup', 'UserController@saveTopup');
+
+//about us
+Route::get('/about-us-login', 'UserController@indexAboutUs')->middleware(\App\Http\Middleware\LoginMiddleware::class);

@@ -8,5 +8,5 @@ class HeaderCategory extends Model
 {
     protected $primaryKey = 'headerCategoryID';
 
-    protected $fillable = ['consultantID', 'categoryID'];
+    protected $fillable = ['consultantID', 'categoryID', 'price'];
 }

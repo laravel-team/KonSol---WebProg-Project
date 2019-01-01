@@ -22,6 +22,7 @@ class CreateHeaderCategoriesTable extends Migration
             $table->integer('categoryID')->unsigned();
             $table->foreign('categoryID')->references('categoryID')->on('categories')->onDelete('cascade');
 
+            $table->integer('price');
             $table->timestamps();
         });
     }

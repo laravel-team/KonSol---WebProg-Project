@@ -30,7 +30,8 @@ class ConsultantsTableSeeder extends Seeder
 
             DB::table('header_categories')->insert([
                 'consultantID' => ($i+1),
-                'categoryID' => rand(1,3)
+                'categoryID' => rand(1,3),
+                'price' => rand(50000, 200000)
             ]);
         }
     }

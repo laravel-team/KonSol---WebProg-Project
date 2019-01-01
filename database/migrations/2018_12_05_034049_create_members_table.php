@@ -23,6 +23,7 @@ class CreateMembersTable extends Migration
             $table->string('address')->nullable();
             $table->string('contactNumber')->nullable();
             $table->string('profilePicture')->nullable();
+            $table->integer('konWallet');
             $table->rememberToken();
             $table->timestamps();
         });

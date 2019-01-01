@@ -26,15 +26,15 @@
                             <div class="card-img pb-3">
                                 <span class="mbri-mobirise mbr-iconfont pr-2"></span>
                                 <h3 class="count py-3 mbr-fonts-style display-2">
-                                    100
+                                    {{ $bookingCount }}
                                 </h3>
                             </div>
                             <div class="card-text">
                                 <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                    TEXT
+                                    Your Bookings
                                 </h4>
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Text
+                                    Nearest Schedule: {{ $schedules->first()->consultationDate }}
                                 </p>
                             </div>
                         </div>
@@ -44,15 +44,15 @@
                             <div class="card-img pb-3">
                                 <span class="mbri-extension mbr-iconfont pr-2"></span>
                                 <h3 class="count py-3 mbr-fonts-style display-2">
-                                    100
+                                    {{ Session::get('konWallet') }}
                                 </h3>
                             </div>
                             <div class="card-text">
                                 <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                    TEXT
+                                    Your KonWallet
                                 </h4>
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Text
+                                    Rp. {{ Session::get('konWallet') }}
                                 </p>
                             </div>
                         </div>
@@ -62,6 +62,44 @@
                     <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konface-login') }}">KonFace</a></button>
 
                 </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+             <div class="row">
+                <div class="col">
+                    <div style="border: 1px solid black; height: 200px; overflow: scroll;">
+                        Your Schedule:
+                        @foreach($schedules as $schedule)
+                            <div style="padding: 3px">
+                                <hr>
+                                Consult with : {{ $schedule->consultantName }} <br>
+                                On : {{ $schedule->consultationDate}} @ {{ $schedule->consultationTime }} for {{ $schedule->duration }} hours <br>
+                                Topic : {{ $schedule->topic }} - {{ $schedule->categoryName }}
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col">
+                    <div style="border: 1px solid black; height: 200px; overflow: scroll;">
+                        Your History:
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="col-md-12">
+        Consult today
+             <div class="row">
+                @foreach($consultants as $consultant)
+                <a href=""><div class="col-6 col-md-4">
+                    <div class="mbr-figure p-3">
+                        <a href="{{ url('consultant/'.$consultant->consultantID) }}"><img src="{{ $consultant->profilePicture}}"></a>
+                        Name: {{ $consultant-> name}} <br>
+                        Corporate : {{ $consultant-> corporate }}
+                    </div>
+                </div></a>
+                @endforeach
             </div>
         </div>
     </div>

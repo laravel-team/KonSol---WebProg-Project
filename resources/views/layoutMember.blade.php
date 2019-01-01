@@ -37,7 +37,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="{{ url('dashboard') }}">
-                         <img src="assets/images/Logo.png" alt="KonsOl" style="height: 3.8rem;">
+                         <img src="{{ asset('assets/images/Logo.png') }}" alt="KonsOl" style="height: 3.8rem;">
                     </a>
                 </span>
 <!--                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="{{ url('home') }}">KonsOL</a></span> -->
@@ -46,10 +46,28 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                <li class="nav-item dropdown open">
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ url('consultation') }}">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        Consultation
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        History
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ url('topup') }}">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        Top Up
+                    </a>
+                </li>
+                <!-- <li class="nav-item dropdown open">
                     <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
                         Categories</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">Education</a><a class="text-white dropdown-item display-4" href="#">Financial</a><a class="text-white dropdown-item display-4" href="#">Healthcare</a></div>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ url('about-us-login') }}">
                         <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -148,5 +166,5 @@
     <script src="{{ asset('assets/smoothscroll/smooth-scroll.js') }}"></script>
     <script src="{{ asset('assets/dropdown/js/script.min.js') }}"></script>
     <script src="{{ asset('assets/theme/js/script.js') }}"></script>
-
+    @yield('script')
 </html>
