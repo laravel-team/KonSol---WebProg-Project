@@ -46,6 +46,13 @@ Route::get('/consultant/sort/{categoryID}', 'UserController@sortConsultant');
 
 //consultant profile
 Route::get('/consultant/{consultantID}', 'UserController@indexConsultantProfile');
+Route::post('/book', 'UserController@saveBookedConsultation');
+
+//your schedule
+Route::get('/yourSchedule', 'UserController@indexSchedule');
+Route::get('/deleteFromBooking/{id}', 'UserController@deleteFromBooking');
+
+//history
 
 //top up
 Route::get('/topup', 'UserController@indexTopup');

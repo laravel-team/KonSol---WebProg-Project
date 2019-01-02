@@ -18,11 +18,15 @@
                 <div class="mbr-figure p-3">
                     Category: {{ $detail->categoryName }} <br>
                     Price : {{ $detail->price }} / Hour <br>
-                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Book Now</button>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" onclick="setModalInput({{ $detail->categoryID }}, '{{ $detail->categoryName }}', {{ $detail->price }})">Book Now</button>
                 </div>
             </div>
             @endforeach
         </div>
+
+        @if(isset($errors))
+                <p style="font-weight: bold; color: red;">{{$errors->first()}}</p>
+        @endif
     </div>
 </section>
 
@@ -38,13 +42,9 @@
       </div>
       <div class="modal-body">
       	<form id="form-book" class="mbr-form" action="{{url('book')}}" method="post" data-form-title="Mobirise Form">
-      	<p>Consultation Category : 
-      		<select name="category" disabled>
-      		@foreach($detailConsultant as $detail)
-      			<option value="{{ $detail->categoryID }}">{{ $detail->categoryName }}</option>
-      		@endforeach
-      		</select>
-      	</p>
+      	{{ csrf_field() }}
+      	<input type="hidden" name="consultantID" value="{{ $consultant->consultantID}}">
+      	<p>Consultation Category : <span id="category"></span> <input type="hidden" name="categoryID"></p>
       	<p>Topic : <input type="text" name="topic"></p>
         <p>Consultation Date : 
         	<div class="date">
@@ -54,7 +54,7 @@
             </div>
         </p>
         <p>Consultation Time : <input type="text" name="time"></p>
-        <p>Duration : <input type="text" name="duration"></p>
+        <p>Duration : <input type="text" name="duration"> Hours</p>
         <p>Consultation Method : 
         	<select name="method" id="method">
       		@foreach($consultationMethods as $method)
@@ -63,11 +63,11 @@
       		</select>
         </p>
         <p>Location : <input type="text" name="location" id="location" value="" disabled></p>
-        <p>Price : <span id="totalPrice"></span></p>
+        <p>Price : <span id="totalPrice"></span> <input type="hidden" name="totalPrice"></p>
         </form>
       </div>
       <div class="modal-footer">
-      	<button type="button" class="btn btn-default" data-dismiss="modal">Book</button>
+      	<button type="submit" class="btn btn-default" onclick="document.getElementById('form-book').submit()">Book</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -79,6 +79,8 @@
 @section('script')
 <script type="text/javascript">
 	var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+	var currentPrice = 0;
+	var totalPrice = 0;
 
     for (i = new Date().getFullYear(); i > 1900; i--){
         $('#years').append($('<option />').val(i).html(i));
@@ -118,6 +120,18 @@
     	}else{
     		$('#location').prop('disabled', false);
     	}
+    });
+
+    function setModalInput(categoryID, categoryName, categoryPrice){
+    	currentPrice = categoryPrice;
+    	$('#category').text(categoryName);
+    	$('[name=categoryID]').val(categoryID);
+    }
+
+    $('[name=duration]').focusout(function(){
+    	totalPrice = $(this).val() * currentPrice;
+    	$('#totalPrice').text("Rp. "+totalPrice);
+    	$('[name=totalPrice]').val(totalPrice);
     });
 </script>
 @endsection

@@ -53,7 +53,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="">
+                    <a class="nav-link link text-white display-4" href="{{ url('yourSchedule') }}">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        Your Schecule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ url('history') }}">
                         <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         History
                     </a>

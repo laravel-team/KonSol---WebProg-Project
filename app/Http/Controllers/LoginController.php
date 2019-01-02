@@ -60,7 +60,7 @@ class LoginController extends Controller
     }
 
     public function showDashboard(){
-        $schedules = ConsultationBooking::join('consultants', 'consultants.consultantID', '=', 'consultation_bookings.consultantID')->join('categories', 'categories.categoryID', '=', 'consultation_bookings.categoryID')->join('consultation_methods', 'consultation_methods.consultationMethodID', '=', 'consultation_bookings.consultationMethodID')->where('memberID', '=', Session::get('id'))->select('consultation_bookings.*', 'consultants.name as consultantName', 'categories.name as categoryName', 'consultation_methods.name as consultationMethod')->get();
+        $schedules = ConsultationBooking::join('consultants', 'consultants.consultantID', '=', 'consultation_bookings.consultantID')->join('categories', 'categories.categoryID', '=', 'consultation_bookings.categoryID')->join('consultation_methods', 'consultation_methods.consultationMethodID', '=', 'consultation_bookings.consultationMethodID')->where('memberID', '=', Session::get('id'))->select('consultation_bookings.*', 'consultants.name as consultantName', 'categories.name as categoryName', 'consultation_methods.name as consultationMethod')->orderBy('consultationDate', 'asc')->get();
         $consultants = Consultant::all();
         $bookingCount = ConsultationBooking::where('memberID', '=', Session::get('id'))->count();
         
