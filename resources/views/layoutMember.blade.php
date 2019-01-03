@@ -48,25 +48,25 @@
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ url('consultation') }}">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        <span class="mbri-user mbr-iconfont mbr-iconfont-btn"></span>
                         Consultation
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ url('yourSchedule') }}">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                        Your Schecule
+                        <span class="mbri-calendar mbr-iconfont mbr-iconfont-btn"></span>
+                        Your Schedule
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ url('history') }}">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        <span class="mbri-clock  mbr-iconfont mbr-iconfont-btn"></span>
                         History
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ url('topup') }}">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        <span class="mbri-cash mbr-iconfont mbr-iconfont-btn"></span>
                         Top Up
                     </a>
                 </li>

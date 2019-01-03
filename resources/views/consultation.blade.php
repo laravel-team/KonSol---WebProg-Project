@@ -2,19 +2,27 @@
 
 @section('title', 'Consultation')
 @section('content')
-<section class="counters2 counters cid-rbr8NdxSJ4" id="counters2-2">
-	<div class="col-md-12">
-        <select id="sortByCategory">
-        	<option value="all">All</option>
-        	@foreach($categories as $category)
-        		<option value="{{ $category->categoryID }}">{{ $category->name }}</option>
-        	@endforeach
-        </select>
-             <div class="row" id="consultantList">
-                
-            </div>
-        </div>
-</section>
+<link rel="stylesheet" type="text/css" href="css/page2.css">
+    <section once="" class="cid-ra90iOq3RC" id="footer7-1d">
+          <div class="wrapper">
+              <div class="container-box">
+                  <div class="Top">
+                    <h2>Consultation : </h2>
+                  </div>
+                  
+                  <select class="consult" id="sortByCategory">
+                    <option value="all">All</option>
+                    @foreach($categories as $category)
+                      <option value="{{ $category->categoryID }}">{{ $category->name }}</option>
+                    @endforeach
+                  </select>
+                  <div class="row" id="consultantList">
+                      
+                  </div>
+              </div>
+          </div>
+
+   </section>
 @endsection
 
 @section('script')

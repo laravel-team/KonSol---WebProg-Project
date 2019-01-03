@@ -49,6 +49,7 @@ class RegisterController extends Controller
         $member->gender = $request->gender;
         $member->address = $request->address;
         $member->contactNumber = $request->contactNumber;
+        $member->konWallet = 0;
 
         $member->save();
 

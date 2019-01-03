@@ -5,69 +5,75 @@
 <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 <section class="counters2 counters cid-rbr8NdxSJ4" id="counters2-2">
     <div class="container pt-4 mt-2">
-        <div class="media-container-row">
-            <div class="media-block" style="width: 38%;">
-                
-                <div class="mbr-figure">
-                    @if(session()->has('photo'))
-                        <img src="assets/images/{{Session::get('photo')}}">
-                    @else
-                        <img src="assets/images/default-pp.jpg">
-                    @endif
+        <div style="padding: 1%; margin-bottom: 6%; border: 3px solid #149dcc;">
+            <div class="media-container-row">
+                <div class="media-block" style="width: 38%;">
+                    
+                    <div class="mbr-figure">
+                        @if(session('photo'))
+                            <img src="assets/images/{{Session::get('photo')}}">
+                        @else
+                            <img src="assets/images/default-pp.jpg">
+                        @endif
+                    </div>
+
+                    <h2 style="border-top: 3px solid #149dcc; margin-top: 3%" class="mbr-section-title pb-3 align-left mbr-fonts-style display-2 mr-auto">
+                        {{Session::get('login')}}</h2>
                 </div>
 
-                <h2 style="border-top: 3px solid black; margin-top: 2%" class="mbr-section-title pb-3 align-left mbr-fonts-style display-2">
-                    {{Session::get('login')}}</h2>
-            </div>
-            <div style="margin-left: 5%" class="cards-block">
-                <div class="cards-container">
-                    <div class="card px-3 align-left col-12 col-md-6">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbri-mobirise mbr-iconfont pr-2"></span>
-                                <h3 class="count py-3 mbr-fonts-style display-2">
-                                    {{ $bookingCount }}
-                                </h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                    Your Bookings
-                                </h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Nearest Schedule: {{ $schedules->first()->consultationDate }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card px-3 align-left col-12 col-md-6">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbri-extension mbr-iconfont pr-2"></span>
-                                <h3 class="count py-3 mbr-fonts-style display-2">
-                                    {{ Session::get('konWallet') }}
-                                </h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                    Your KonWallet
-                                </h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Rp. {{ Session::get('konWallet') }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('kontext-login') }}" style="co">KonText</a></button>
-                    <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konface-login') }}">KonFace</a></button>
+                <div style="margin-left: 5%" class="cards-block">
+                    <div class="cards-container">
+                        <div class="card px-3 align-left col-12 col-md-6">
+                            <div class="panel-item p-3">
+                                <div class="card-img pb-3">
+                                    <span class="mbri-edit mbr-iconfont pr-2"></span>
+                                    <h3 class="count py-3 mbr-fonts-style display-2">
+                                        {{$bookingCount}}
+                                    </h3>
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
+                                        Your Bookings
+                                    </h4>
 
+                                    <label class="mbr-content-text mbr-fonts-style display-7">
+                                        Book : {{$bookingCount}}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card px-3 align-left col-12 col-md-6">
+                            <div class="panel-item p-3">
+                                <div class="card-img pb-3">
+                                    <span class="mbri-cash mbr-iconfont pr-2"></span>
+                                    <h3 class="count py-3 mbr-fonts-style display-2">
+                                        {{ Session::get('konWallet') }}
+                                    </h3>
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
+                                        Your KonWallet
+                                    </h4>
+
+                                    <label class="mbr-content-text mbr-fonts-style display-7">
+                                        Rp. {{ Session::get('konWallet') }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('kontext-login') }}" style="co"><span class="mbri-chat" style="margin-right: 10%;"></span>KonText</a></button>
+                        <button id="button-login" class="mr-auto col-md-5"><a href="{{ url('konface-login') }}"><span class="mbri-desktop" style="margin-right: 10%;"></span>KonFace</a></button>
+
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-md-12">
              <div class="row">
                 <div class="col">
-                    <div style="border: 1px solid black; height: 200px; overflow: scroll;">
+                    <div style="padding:1.5%; border: 1px solid #149dcc; height: 200px; overflow: scroll;">
                         Your Schedule:
                         @foreach($schedules as $schedule)
                             <div style="padding: 3px">
@@ -80,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div style="border: 1px solid black; height: 200px; overflow: scroll;">
+                    <div style="padding:1.5%; border: 1px solid #149dcc; height: 200px; overflow: scroll;">
                         Your History:
                     </div>
                 </div>
@@ -88,8 +94,8 @@
         </div>
 
         <br>
-        <div class="col-md-12">
-        Consult today
+        <div class="col-md-12" style="padding:1.5%;">
+            Consult today
              <div class="row">
                 @foreach($consultants as $consultant)
                 <a href=""><div class="col-6 col-md-4">
