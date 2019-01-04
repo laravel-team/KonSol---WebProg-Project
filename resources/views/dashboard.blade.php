@@ -5,6 +5,9 @@
 <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 <link rel="stylesheet" type="text/css" href="css/page2.css">
 <section class="counters2 counters cid-rbr8NdxSJ4" id="counters2-2">
+    <div class="container" style="border-bottom: 3px solid #149dcc; border-top: 3px solid #149dcc">
+        <h2 class="mbr-section-title align-center mbr-fonts-style display-2">Dashboard</h2>
+    </div>
     <div class="container pt-4 mt-2">
         <div style="padding: 1%; margin-bottom: 6%;">
             <div class="media-container-row">
@@ -74,46 +77,110 @@
 <!--         <div class="col-md-12">
              <div class="row">
                 <div class="col">
-                    <div style="padding:1.5%; border: 1px solid #149dcc; height: 200px; overflow: scroll;">
-                        Your Schedule:
+                    <div class="card-img ">
+                        <span class="mbri-calendar mbr-iconfont" style="display: block; margin-left: auto; margin-right: auto;"></span>
+                    </div>
+                    <h4 class="mbr-element-title align-center mbr-fonts-style pb-2 display-5">
+                        Your Schedule
+                    </h4>
+                    <div style="padding:1.5%; border: 1px solid #149dcc; height: 200px; overflow-y: scroll;border-radius: 15px; background-color: #E9E7E6;">
                         @foreach($schedules as $schedule)
                             <div style="padding: 3px">
+                                <table>
+                                    <tr>
+                                        <td>Consult with</td>
+                                        <td>:</td>
+                                        <td>{{ $schedule->consultantName }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>On</td>
+                                        <td>:</td>
+                                        <td>{{ $schedule->consultationDate}} @ {{ $schedule->consultationTime }} for {{ $schedule->duration }} hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Topic</td>
+                                        <td>:</td>
+                                        <td>{{ $schedule->topic }} - {{ $schedule->categoryName }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                                    </tr>
+                                </table>
                                 <hr>
-                                Consult with : {{ $schedule->consultantName }} <br>
-                                On : {{ $schedule->consultationDate}} @ {{ $schedule->consultationTime }} for {{ $schedule->duration }} hours <br>
-                                Topic : {{ $schedule->topic }} - {{ $schedule->categoryName }}
                             </div>
                         @endforeach
                     </div>
                 </div>
                 <div class="col">
-                    <div style="padding:1.5%; border: 1px solid #149dcc; height: 200px; overflow: scroll;">
-                        Your History:
+                    <div class="card-img ">
+                        <span class="mbri-clock mbr-iconfont" style="display: block; margin-left: auto; margin-right: auto;"></span>
+                    </div>
+                    <h4 class="mbr-element-title align-center mbr-fonts-style pb-2 display-5">
+                        History
+                    </h4>
+                    <div style="padding:1.5%; border: 1px solid #149dcc; height: 200px; overflow-y: scroll;border-radius: 15px; background-color: #E9E7E6;">
+                        @foreach($histories as $history)
+                            <div style="padding: 3px">
+                                <table>
+                                    <tr>
+                                        <td>Consult with</td>
+                                        <td>:</td>
+                                        <td>{{ $history->consultantName }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>On</td>
+                                        <td>:</td>
+                                        <td>{{ $history->consultationDate}} @ {{ $history->consultationTime }} for {{ $history->duration }} hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Topic</td>
+                                        <td>:</td>
+                                        <td>{{ $history->topic }} - {{ $history->categoryName }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                                    </tr>
+                                </table>
+                                <hr>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
 
-        <br>
+        <br><br><br>
         <div class="col-md-12" style="padding:1.5%;">
-            Consult today
+            <h4 class="mbr-element-title align-center mbr-fonts-style pb-2 display-5">
+                Consult Today
+            </h4>
              <div class="row">
                 @foreach($consultants as $consultant)
-                <a href=""><div class="col-6 col-md-4">
+                <div class="col-6 col-md-4">
                     <div class="mbr-figure p-3">
                         <a href="{{ url('consultant/'.$consultant->consultantID) }}"><img src="{{ $consultant->profilePicture}}"></a>
-                        Name: {{ $consultant-> name}} <br>
-                        Corporate : {{ $consultant-> corporate }}
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td style="padding-left: 5px; padding-right: 5px;">:</td>
+                                <td>{{ $consultant-> name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Corporate</td>
+                                <td style="padding-left: 5px; padding-right: 5px;">:</td>
+                                <td>{{ $consultant-> corporate }}</td>
+                            </tr>
+                        </table>
                     </div>
-                </div></a>
+                </div>
                 @endforeach
             </div>
         </div>
     </div> -->
 
-  <section class="tabs3 cid-re9yCidFyg" id="tabs3-2h">
+  <section class="tabs cid-re9yCidFyg" id="tabs3-2h">
     <div class="container" style="border-bottom: 3px solid #149dcc; border-top: 3px solid #149dcc">
-        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Dashboard</h2>
+        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Menu</h2>
     </div>
     <div class="container-fluid">
         <div class="row tabcont">
@@ -180,21 +247,32 @@
                             </h4>
 
                             <div class="col">
-                                <div style="padding:1.5%; border: 1px solid #149dcc; height: 150px; overflow: scroll;">
+                                <div style="padding:1.5%; border: 1px solid #149dcc; height: 300px; overflow-y: scroll; border-radius: 15px; background-color: #E9E7E6;">
                                       @foreach($schedules as $schedule)
-                                          <div style="padding: 3px">
-                                              <hr>
-                                              Consult with : {{ $schedule->consultantName }} <br>
-                                              On : {{ $schedule->consultationDate}} @ {{ $schedule->consultationTime }} for {{ $schedule->duration }} hours <br>
-                                              Topic : {{ $schedule->topic }} - {{ $schedule->categoryName }} <br>
-                                              Consultation Method : {{ $schedule->consultationMethod }}
-                                              @if($schedule->consultationMethod == "Meeting")
-                                                <br> Meeting Location : {{ $schedule->location }}
-                                              @endif
-                                              <!-- <button>Finish</button> -->
-                                              <button onclick="deletefromConsultationBooking({{ $schedule->consultationBookingID }})">Cancel</button>
-                                          </div>
-                                       @endforeach
+                                    <div style="padding: 3px">
+                                    <table>
+                                        <tr>
+                                            <td>Consult with</td>
+                                            <td>:</td>
+                                            <td>{{ $schedule->consultantName }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>On</td>
+                                            <td>:</td>
+                                            <td>{{ $schedule->consultationDate}} @ {{ $schedule->consultationTime }} for {{ $schedule->duration }} hours</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Topic</td>
+                                            <td>:</td>
+                                            <td>{{ $schedule->topic }} - {{ $schedule->categoryName }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="btn btn-sm btn-primary" href="/schedule/{{ $schedule->consultationBookingID }}">Detail</a></td>
+                                        </tr>
+                                    </table>
+                                <hr>
+                            </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>                        
@@ -212,8 +290,32 @@
                             </h4>
 
                             <div class="col">
-                                <div style="padding:1.5%; border: 1px solid #149dcc; height: 150px; overflow: scroll;">
-
+                                <div style="padding:1.5%; border: 1px solid #149dcc; height: 300px; overflow-y: scroll; border-radius: 15px; background-color: #E9E7E6;">
+                                    @foreach($histories as $history)
+                            <div style="padding: 3px">
+                                <table>
+                                    <tr>
+                                        <td>Consult with</td>
+                                        <td>:</td>
+                                        <td>{{ $history->consultantName }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>On</td>
+                                        <td>:</td>
+                                        <td>{{ $history->consultationDate}} @ {{ $history->consultationTime }} for {{ $history->duration }} hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Topic</td>
+                                        <td>:</td>
+                                        <td>{{ $history->topic }} - {{ $history->categoryName }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="btn btn-sm btn-primary" href="/history/{{ $history->consultationHistoryID }}">Detail</a></td>
+                                    </tr>
+                                </table>
+                                <hr>
+                            </div>
+                        @endforeach
                                 </div>
                             </div>
                         </div>                        

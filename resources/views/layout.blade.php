@@ -44,10 +44,10 @@
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown open">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><!-- <li class="nav-item dropdown open">
                     <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
                         Categories</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">Education</a><a class="text-white dropdown-item display-4" href="#">Financial</a><a class="text-white dropdown-item display-4" href="#">Healthcare</a></div>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ url('about-us') }}">
                         <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>

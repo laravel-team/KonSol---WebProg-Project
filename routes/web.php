@@ -48,15 +48,17 @@ Route::get('/consultant/sort/{categoryID}', 'UserController@sortConsultant')->mi
 Route::get('/consultant/{consultantID}', 'UserController@indexConsultantProfile')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 Route::post('/book', 'UserController@saveBookedConsultation')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
-//your schedule
-// Route::get('/yourSchedule', 'UserController@indexSchedule')->middleware(\App\Http\Middleware\LoginMiddleware::class);
-// Route::get('/deleteFromBooking/{id}', 'UserController@deleteFromBooking')->middleware(\App\Http\Middleware\LoginMiddleware::class);
-
-//history
+//schedule
+Route::get('/schedule/{id}', 'UserController@indexDetailSchedule')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::post('/saveEditedBook', 'UserController@saveEditedBook')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::get('/deleteFromBooking/{id}', 'UserController@deleteFromBooking')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 //top up
 // Route::get('/topup', 'UserController@indexTopup')->middleware(\App\Http\Middleware\LoginMiddleware::class);
-// Route::post('/topup', 'UserController@saveTopup')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::post('/topup', 'UserController@saveTopup')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+
+//history
+Route::get('/history/{id}', 'UserController@indexDetailHistory')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 //about us
 Route::get('/about-us-login', 'UserController@indexAboutUs')->middleware(\App\Http\Middleware\LoginMiddleware::class);

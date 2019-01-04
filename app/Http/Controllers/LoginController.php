@@ -8,6 +8,7 @@ use session;
 use App\Member;
 use App\Consultant;
 use App\ConsultationBooking;
+use App\ConsultationHistory;
 use Illuminate\Support\Facades\Input;
 
 class LoginController extends Controller
@@ -63,8 +64,9 @@ class LoginController extends Controller
         $schedules = ConsultationBooking::join('consultants', 'consultants.consultantID', '=', 'consultation_bookings.consultantID')->join('categories', 'categories.categoryID', '=', 'consultation_bookings.categoryID')->join('consultation_methods', 'consultation_methods.consultationMethodID', '=', 'consultation_bookings.consultationMethodID')->where('memberID', '=', Session::get('id'))->select('consultation_bookings.*', 'consultants.name as consultantName', 'categories.name as categoryName', 'consultation_methods.name as consultationMethod')->orderBy('consultationDate', 'asc')->get();
         $consultants = Consultant::all();
         $bookingCount = ConsultationBooking::where('memberID', '=', Session::get('id'))->count();
+        $histories = ConsultationHistory::join('consultants', 'consultants.consultantID', '=', 'consultation_histories.consultantID')->where('memberID', '=', Session::get('id'))->select('consultation_histories.*', 'consultants.name as consultantName')->orderBy('consultationDate', 'asc')->get();
         
-	    return view('dashboard', compact('consultants', 'schedules', 'bookingCount'));
+	    return view('dashboard', compact('consultants', 'schedules', 'bookingCount', 'histories'));
 	}
 
     public function showKontext(){
