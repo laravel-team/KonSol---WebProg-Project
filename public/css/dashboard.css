@@ -1,4 +1,4 @@
-#button-login{
+#button-log{
 	margin-top: 8%;
 	margin-bottom: 0;
 	display: block;
@@ -14,13 +14,13 @@
 	display: block;
 }
 
-#button-login a{
+#button-log a{
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
 }
 
-#button-login:hover{
+#button-log:hover{
 	background-color: #138eba;
 	color: white;
 	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);

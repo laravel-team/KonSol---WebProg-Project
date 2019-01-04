@@ -39,24 +39,24 @@ Route::get('/dashboard', 'LoginController@showDashboard')->middleware(\App\Http\
 
 Route::get('/change-profile', 'LoginController@changeProfile')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 Route::patch('/update-profile/{id}', 'LoginController@updateProfile');
-
+	
 //consultation
-Route::get('/consultation', 'UserController@indexConsultation');
-Route::get('/consultant/sort/{categoryID}', 'UserController@sortConsultant');
+Route::get('/consultation', 'UserController@indexConsultation')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::get('/consultant/sort/{categoryID}', 'UserController@sortConsultant')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 //consultant profile
-Route::get('/consultant/{consultantID}', 'UserController@indexConsultantProfile');
-Route::post('/book', 'UserController@saveBookedConsultation');
+Route::get('/consultant/{consultantID}', 'UserController@indexConsultantProfile')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+Route::post('/book', 'UserController@saveBookedConsultation')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 //your schedule
-Route::get('/yourSchedule', 'UserController@indexSchedule');
-Route::get('/deleteFromBooking/{id}', 'UserController@deleteFromBooking');
+// Route::get('/yourSchedule', 'UserController@indexSchedule')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+// Route::get('/deleteFromBooking/{id}', 'UserController@deleteFromBooking')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 //history
 
 //top up
-Route::get('/topup', 'UserController@indexTopup');
-Route::post('/topup', 'UserController@saveTopup');
+// Route::get('/topup', 'UserController@indexTopup')->middleware(\App\Http\Middleware\LoginMiddleware::class);
+// Route::post('/topup', 'UserController@saveTopup')->middleware(\App\Http\Middleware\LoginMiddleware::class);
 
 //about us
 Route::get('/about-us-login', 'UserController@indexAboutUs')->middleware(\App\Http\Middleware\LoginMiddleware::class);

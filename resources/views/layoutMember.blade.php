@@ -52,14 +52,14 @@
                         Consultation
                     </a>
                 </li>
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ url('yourSchedule') }}">
                         <span class="mbri-calendar mbr-iconfont mbr-iconfont-btn"></span>
                         Your Schedule
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="{{ url('history') }}">
+                </li> -->
+<!--                 <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ url('chat') }}">
                         <span class="mbri-clock  mbr-iconfont mbr-iconfont-btn"></span>
                         History
                     </a>
@@ -69,7 +69,7 @@
                         <span class="mbri-cash mbr-iconfont mbr-iconfont-btn"></span>
                         Top Up
                     </a>
-                </li>
+                </li> -->
                 <!-- <li class="nav-item dropdown open">
                     <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
                         Categories</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="#">Education</a><a class="text-white dropdown-item display-4" href="#">Financial</a><a class="text-white dropdown-item display-4" href="#">Healthcare</a></div>
