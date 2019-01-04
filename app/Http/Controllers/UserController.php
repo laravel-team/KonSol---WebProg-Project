@@ -110,4 +110,5 @@ class UserController extends Controller
     public function indexAboutUs(){
         return view('aboutusLogin');
     }
+    
 }

@@ -2,11 +2,13 @@
 
 @section('title', 'Consultant Profile')
 @section('content')
-<section class="counters2 counters cid-rbr8NdxSJ4" id="counters2-2">
-	<div class="media-block" style="width: 38%;">
+<section class="counters2 counters cid-rbr8NdxSJ4" id="counters2-2" >
+	<div class="media-block" style="margin-bottom: 6% !important; height: relative">
         <div class="mbr-figure">
-            <img src="{{ $consultant->profilePicture}}">
+            <img src="{{ $consultant->profilePicture}}" style="width: 38% !important; float: left !important; margin-right: 3%;">
         </div>
+        <br><br>
+
         Name : {{ $consultant->name }} <br>
         Email : {{ $consultant->email }} <br>
         Corporate : {{ $consultant->corporate }} <br>
@@ -14,7 +16,7 @@
 
         <div class="row">
             @foreach($detailConsultant as $detail)
-            <div class="col-6 col-md-4">
+            <div class="col-6 col-md-4" style="padding: 0% !important">
                 <div class="mbr-figure p-3">
                     Category: {{ $detail->categoryName }} <br>
                     Price : {{ $detail->price }} / Hour <br>

@@ -2,27 +2,29 @@
 
 @section('title', 'Consultation')
 @section('content')
+
 <link rel="stylesheet" type="text/css" href="css/page2.css">
-    <section once="" class="cid-ra90iOq3RC" id="footer7-1d">
+    <section once="" class="cid-ra90iOq3RC" id="footer7-1d" >
           <div class="wrapper">
               <div class="container-box">
                   <div class="Top">
                     <h2>Consultation : </h2>
                   </div>
                   
-                  <select class="consult" id="sortByCategory">
+                  <select class="consult" id="sortByCategory" style="margin-bottom: 10px;">
                     <option value="all">All</option>
                     @foreach($categories as $category)
                       <option value="{{ $category->categoryID }}">{{ $category->name }}</option>
                     @endforeach
                   </select>
-                  <div class="row" id="consultantList">
+                  <div class="row" id="consultantList" style="width: 150% !important">
                       
                   </div>
               </div>
           </div>
 
    </section>
+
 @endsection
 
 @section('script')

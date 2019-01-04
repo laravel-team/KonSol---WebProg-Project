@@ -28,7 +28,7 @@ Route::get('/kontext', 'HomeController@indexKontext')->name('kontext');
 Route::get('/konface', 'HomeController@indexKonface')->name('konface');
 Route::get('/about-us', 'HomeController@indexAboutUs')->name('aboutus');
 Route::get('/logout', 'LoginController@logOut');
-
+Route::get('/topup','UserController@indexTopup');
 
 //memberIndex(need middleware)
 //middlewareny nnti di grouping aja
