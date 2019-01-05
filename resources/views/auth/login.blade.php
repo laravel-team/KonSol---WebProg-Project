@@ -9,6 +9,9 @@
     @csrf
         <div class="wrapper" style="height: 100vh !important">
             <div class="container-box" style="padding-top: 13% !important;">
+              @if(isset($errors))
+                <p style="font-weight: bold; color: red;">{{$errors->first()}}</p>
+              @endif
               <label>Email</label>
               <input type="text" name="email" placeholder="Email">
               <label>Password</label>

@@ -13,26 +13,26 @@ class MembersTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        $limit = 10;
+        // $limit = 10;
 
-        for ($i = 0; $i < $limit; $i++) {
-            DB::table('members')->insert([
-                'name' => $faker->name,
-                'email' => $faker->unique()->email,
-                'password' => $faker->password,
-                'gender' => $faker->randomElement(['Male', 'female']),
-                'dob' => $faker->date($format = 'Y-m-d', $max = 'now'),
-                'address' => $faker->streetAddress,
-                'contactNumber' => $faker->e164PhoneNumber,
-                'profilePicture' => $faker->imageUrl(640, 480, 'cats'),
-                'konWallet' => rand(50000,100000)
-            ]);
-        }
+        // for ($i = 0; $i < $limit; $i++) {
+        //     DB::table('members')->insert([
+        //         'name' => $faker->name,
+        //         'email' => $faker->unique()->email,
+        //         'password' => $faker->password,
+        //         'gender' => $faker->randomElement(['Male', 'female']),
+        //         'dob' => $faker->date($format = 'Y-m-d', $max = 'now'),
+        //         'address' => $faker->streetAddress,
+        //         'contactNumber' => $faker->e164PhoneNumber,
+        //         'profilePicture' => $faker->imageUrl(640, 480, 'cats'),
+        //         'konWallet' => rand(50000,100000)
+        //     ]);
+        // }
 
         DB::table('members')->insert([
                 'name' => 'Aditya',
                 'email' => 'adityabudiman@gmail.com',
-                'password' => 'inginjadisultan',
+                'password' => bcrypt('inginjadisultan'),
                 'gender' => 'Male',
                 'dob' => $faker->date($format = 'Y-m-d', $max = 'now'),
                 'address' => $faker->streetAddress,
@@ -43,7 +43,7 @@ class MembersTableSeeder extends Seeder
 
         DB::table('consultation_bookings')->insert([
                 [
-                    'memberID' => 11,
+                    'memberID' => 1,
                     'consultantID' => 2,
                     'categoryID' => 1,
                     'consultationMethodID' => 2,
@@ -55,7 +55,7 @@ class MembersTableSeeder extends Seeder
                     'location' => "-"
                 ],
                 [
-                    'memberID' => 11,
+                    'memberID' => 1,
                     'consultantID' => 1,
                     'categoryID' => 2,
                     'consultationMethodID' => 3,

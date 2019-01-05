@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use session;
+use Hash;
 use App\Member;
 use App\Consultant;
 use App\ConsultationBooking;
@@ -25,12 +26,20 @@ class LoginController extends Controller
     	$email = $request->email;
     	$password = $request->password;
 
-    	$memberID = DB::table('members')->where('email','=',$email)->where('password','=',$password)->value('memberID');
-    	$member = Member::find($memberID);
+    	$memberID = DB::table('members')->where('email','=',$email)->first();
     	// Session::put('isLogin', FALSE);
 
-    	if($member != null)
+    	if($memberID != null)
     	{
+
+            $member = Member::find($memberID->memberID);
+
+            //check
+            $checkPassword = Hash::check($password, $member->password);
+            if($checkPassword == false){
+                return redirect()->back()->withErrors("Wrong Password !!!");
+            }
+
             session(['email'=>$member->email, 'password'=>$member->password, 'login'=>$member->name, 'id'=>$member->memberID, 'gender'=>$member->gender, 'address'=>$member->address, 'phone'=>$member->contactNumber,  'photo'=>$member->profilePicture, 'konWallet'=>$member->konWallet, 'success'=>'login', 'isLogin' => TRUE]);
 
             return redirect('dashboard');
@@ -116,7 +125,7 @@ class LoginController extends Controller
 
         $member->email = $request->email;
         $member->name = $request->name;
-        $member->password = $request->password;
+        $member->password = bcrypt($request->password);
         $member->gender = $request->gender;
         $member->address = $request->address;
         $member->contactNumber = $request->contactNumber;

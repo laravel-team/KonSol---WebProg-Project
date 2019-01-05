@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Member;
 use Illuminate\Support\Facades\Input;
+use Hash;
 
 class RegisterController extends Controller
 {
@@ -45,7 +46,7 @@ class RegisterController extends Controller
 
 		$member->email = $request->email;
         $member->name = $request->name;
-        $member->password = $request->password;
+        $member->password = bcrypt($request->password);
         $member->gender = $request->gender;
         $member->address = $request->address;
         $member->contactNumber = $request->contactNumber;
