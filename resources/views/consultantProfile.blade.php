@@ -16,7 +16,7 @@
                         Name : {{ $consultant->name }} <br>
                         Email : {{ $consultant->email }} <br>
                         Corporate : {{ $consultant->corporate }} <br>
-                        Contact Number : {{ $consultant->contactNumber }}
+                        Contact Number : {{ $consultant->contactNumber }} <br>
 
                         @foreach($detailConsultant as $detail)
                             Category: {{ $detail->categoryName }} <br>

@@ -2,65 +2,45 @@
 
 @section('title', 'Your Schedule')
 @section('content')
-    <section once="" class="cid-rbr8NdxSJ4" id="footer7-1d">
-          <div class="wrapper">
-          	<div class="mbr-figure">
-            	<img src="{{ $consultant->profilePicture}}" style="width: 38% !important; float: left !important; margin-right: 3%;">
-        	</div>
-              <div class="container-box">
-                  <div class="Top">
-                    <h2>Your Schedule : </h2>
-                  </div>
-                      <div style="padding: 3px">
-                          <table>
-                          	<tr>
-                          		<td>Consult with</td>
-                          		<td>:</td>
-                          		<td>{{ $schedule[0]->consultantName }}</td>
-                          	</tr>
-                          	<tr>
-                          		<td>On</td>
-                          		<td>:</td>
-                          		<td>{{ $schedule[0]->consultationDate}} @ {{ $schedule[0]->consultationTime }} for {{ $schedule[0]->duration }} hours</td>
-                          	</tr>
-                          	<tr>
-                          		<td>Category</td>
-                          		<td>:</td>
-                          		<td>{{ $schedule[0]->categoryName }}</td>
-                          	</tr>
-                          	<tr>
-                          		<td>Topic</td>
-                          		<td>:</td>
-                          		<td>{{ $schedule[0]->topic }}</td>
-                          	</tr>
-                          	<tr>
-                          		<td>Consultation Method</td>
-                          		<td>:</td>
-                          		<td>{{ $schedule[0]->consultationMethod }}</td>
-                          	</tr>
-                          	@if($schedule[0]->consultationMethod == "Meeting")
-                          	<tr>
-                          		<td>Meeting Location</td>
-                          		<td>:</td>
-                          		<td>{{ $schedule[0]->location }}</td>
-                          	</tr>
-                          	@endif
-                          	<tr>
-                          		<td>Total Price</td>
-                          		<td>:</td>
-                          		<td>{{ $schedule[0]->price }}</td>
-                          	</tr>
-                          </table>
-                          <br>
-                          <a type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit Book</a>
-                          <a type="button" class="btn btn-info btn-sm" href="{{ url('deleteFromBooking') }}/{{$schedule[0]->consultationBookingID}}">Cancel</a>
-                      </div>
-              </div>
-          </div>
-          @if(isset($errors))
-                <p style="font-weight: bold; color: red;">{{$errors->first()}}</p>
-        @endif
-   </section>
+    <section class="engine"><a href="https://mobirise.me/q">free responsive site templates</a></section><section class="header3 cid-recehG372s" id="header3-2p">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-figure" style="width: 100%;">
+                <img src="{{ $consultant->profilePicture}}" alt="Mobirise">
+            </div>
+
+            <div class="media-content" style="margin-top: 1%; border: 3px solid white;">
+                
+                <div class="mbr-section-text mbr-white pb-3" style="padding: 2%">
+                    <p class="mbr-text mbr-fonts-style display-5">
+                              Consult with : {{ $schedule[0]->consultantName }} <br>
+                              On : {{ $schedule[0]->consultationDate}} @ {{ $schedule[0]->consultationTime }} for {{ $schedule[0]->duration }} hours <br>
+                              Category : {{ $schedule[0]->categoryName }} <br>
+                              Topic : {{ $schedule[0]->topic }} <br>
+                              Consultation Method : {{ $schedule[0]->consultationMethod }} <br>
+
+                              @if($schedule[0]->consultationMethod == "Meeting")
+                                Meeting Location : {{ $schedule[0]->location }} <br>
+                              @endif
+                            
+                              Total Price : {{ $schedule[0]->price }} <br>
+                    </p>
+                </div>
+                            
+                <div class="mbr-section-btn">       
+                    <a type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit Book</a>
+                      <a type="button" class="btn btn-info btn-sm" href="{{ url('deleteFromBooking') }}/{{$schedule[0]->consultationBookingID}}">Cancel</a>
+                </div>
+
+                @if(isset($errors))
+                        <p style="font-weight: bold; color: red;">{{$errors->first()}}</p>
+                @endif
+            </div>
+        </div>
+    </div>
+
+</section>
+
 
   <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">

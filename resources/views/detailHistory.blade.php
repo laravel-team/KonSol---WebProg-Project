@@ -1,50 +1,24 @@
 @extends('layoutMember')
 
-@section('title', 'Your Schedule')
+@section('title', 'Your History')
 @section('content')
-    <section once="" class="cid-rbr8NdxSJ4" id="footer7-1d">
-          <div class="wrapper">
-          	<div class="mbr-figure">
-            	<img src="{{ $consultant->profilePicture}}" style="width: 38% !important; float: left !important; margin-right: 3%;">
-        	</div>
-              <div class="container-box">
-                  <div class="Top">
-                    <h2>Your History : </h2>
-                  </div>
-                      <div style="padding: 3px">
-                          <table>
-                          	<tr>
-                          		<td>Consult with</td>
-                          		<td>:</td>
-                          		<td>{{ $history[0]->consultantName }}</td>
-                          	</tr>
-                          	<tr>
-                          		<td>On</td>
-                          		<td>:</td>
-                          		<td>{{ $history[0]->consultationDate}} @ {{ $history[0]->consultationTime }} for {{ $history[0]->duration }} hours</td>
-                          	</tr>
-                          	<tr>
-                          		<td>Category</td>
-                          		<td>:</td>
-                          		<td>{{ $history[0]->categoryName }}</td>
-                          	</tr>
-                          	<tr>
-                          		<td>Topic</td>
-                          		<td>:</td>
-                          		<td>{{ $history[0]->topic }}</td>
-                          	</tr>
-                            <tr>
-                              <td>Location</td>
-                              <td>:</td>
-                              <td>{{ $history[0]->location }}</td>
-                            </tr>
-                          	<tr>
-                          		<td>Total Price</td>
-                          		<td>:</td>
-                          		<td>{{ $history[0]->price }}</td>
-                          	</tr>
-                          </table>
-                          <br>
+<section class="engine"><a href="https://mobirise.me/q">free responsive site templates</a></section><section class="header3 cid-recehG372s" id="header3-2p">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-figure" style="width: 100%;">
+                <img src="{{ $consultant->profilePicture}}" alt="Mobirise">
+            </div>
+
+              <div class="media-content" style="margin-top: 1%; border: 3px solid white;">
+
+                <div class="mbr-section-text mbr-white pb-3" style="padding: 2%">
+                    <p class="mbr-text mbr-fonts-style display-5">
+                          		Consult with : {{ $history[0]->consultantName }} <br>
+                          		On : {{ $history[0]->consultationDate}} @ {{ $history[0]->consultationTime }} for {{ $history[0]->duration }} hours <br>
+                          		Category : {{ $history[0]->categoryName }} <br>
+                          		Topic : {{ $history[0]->topic }} <br>
+                              Location : {{ $history[0]->location }} <br>
+                          		Total Price : {{ $history[0]->price }} <br>
                       </div>
               </div>
           </div>
